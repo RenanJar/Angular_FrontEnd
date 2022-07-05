@@ -20,7 +20,9 @@ export class EntrarComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-
+    if(environment.token != ''){
+      environment.token=''
+    }
     window.scroll(0,0)
   }
 
@@ -38,7 +40,7 @@ export class EntrarComponent implements OnInit {
 
 
     }, erro =>{
-      if(erro.status == 500){
+      if(erro.status == 500 || erro.status == 401){
         alert('Usuario ou senhas inválidos')
       }
     })

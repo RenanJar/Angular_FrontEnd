@@ -40,6 +40,7 @@ export class CadastrarComponent implements OnInit {
       .subscribe((resp: Usuario)=>{
 
         this.usuario = resp
+        this.router.navigate(['/entrar'])
         alert('usúario cadastrado com sucesso ! ! !')
 
       })

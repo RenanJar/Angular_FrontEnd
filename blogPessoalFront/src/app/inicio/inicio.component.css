@@ -1,0 +1,27 @@
+.background{
+    background-color: #17284B;
+}
+
+.text-white{
+    color: white;
+}
+
+.fs-54{
+    font-size: 40pt;
+}
+
+.fs-18{
+    font-size: 18pt;
+}
+
+.fs-10{
+    font-size: 8pt;
+}
+
+.btn-light{
+    height: 90px;
+}
+
+.btn-outline-info{
+    height: 90px;
+}
