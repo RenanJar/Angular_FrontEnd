@@ -7,15 +7,21 @@
 }
 
 .fs-54{
-    font-size: 40pt;
+    font-size: 30px;
 }
 
 .fs-18{
-    font-size: 18pt;
+    font-size: 18px;
 }
 
 .fs-10{
     font-size: 8pt;
+    text-align: center;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-light{

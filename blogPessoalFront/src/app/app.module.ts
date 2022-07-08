@@ -11,6 +11,12 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { TesteComponent } from './teste/teste.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { TemaComponent } from './tema/tema.component';
+import { TemadeleteComponent } from './delete/temadelete/temadelete.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 
 @NgModule({
   declarations: [
@@ -19,13 +25,19 @@ import { InicioComponent } from './inicio/inicio.component';
     CadastrarComponent,
     MenuComponent,
     RodapeComponent,
-    InicioComponent
+    InicioComponent,
+    TesteComponent,
+    TemaComponent,
+    TemadeleteComponent,
+    TemaEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    DragDropModule
   ],
   providers: [{
     provide: LocationStrategy,

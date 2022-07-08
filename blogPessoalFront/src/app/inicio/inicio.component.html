@@ -6,21 +6,21 @@
 
         </div>
 
-        <div class="col-md-6 text-white">
+        <div class="col-md-6 text-white container justify-content-center">
 
-            <div class="row d-flex justify-content-center ">
-                <div class="col-md-6">
-                    <h1 class="fs-54">Seja bem vindo(a)! </h1>
-                    <h5 class="fs-18">expresse aqui os seus pensamentos e opniões!</h5>
-
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 text-white pt-5">
+                  <h1 class="fs-54">Seja bem vindo(a)! </h1>
+                  <h5 class="fs-18">expresse aqui os seus pensamentos e opniões!</h5>
                 </div>
             </div>
 
             <div class="row d-flex justify-content-center mt-3 mb-5">
                 <div class="col-md-6">
-                    <button class="btn btn-light me-3 fs-10 "data-bs-toggle="modal" data-bs-target="#novaPostagem"> Nova Postagem</button>
-                    <a class="btn btn-outline-info fs-10 align-middle" href="#postagens"> Ver Postagem</a>
-
+                    <div class="row">
+                        <button class="btn btn-light me-3 fs-10 d-flex"data-bs-toggle="modal" data-bs-target="#novaPostagem"> Nova Postagem</button>
+                        <a class="btn btn-outline-info fs-10 text-center" href="#postagens">Ver Postagem</a>
+                    </div>
                 </div>
             </div>
 
@@ -86,6 +86,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" routerLink="/tema" data-bs-dismiss="modal">Cadastrar Tema</button>
           <button type="button" class="btn btn-success">Publicar</button>
         </div>
       </div>
