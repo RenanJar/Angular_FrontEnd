@@ -31,3 +31,7 @@
 .btn-outline-info{
     height: 90px;
 }
+
+.pading0{
+    padding: 0 !important;
+}
