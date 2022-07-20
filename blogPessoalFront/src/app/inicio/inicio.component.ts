@@ -40,6 +40,7 @@ export class InicioComponent implements OnInit {
 
     this.getAllTemas()
     this.getAllPostagens()
+    this.findByIdUsuario()
   }
 
 
@@ -65,6 +66,12 @@ export class InicioComponent implements OnInit {
     })
   }
 
+  findTemaID(id: number){
+    this.temaService.getByIdTema(id).subscribe((resp:Tema)=>{
+      this.tema = resp
+    })
+  }
+
   getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp:Postagem[])=>{
       this.listaPostagem = resp
@@ -85,6 +92,16 @@ export class InicioComponent implements OnInit {
       this.postagem = new Postagem()
       this.getAllPostagens()
     })
+  }
+
+  apagar(id:number) {
+    this.postagemService.deletePostagem(id).subscribe(()=> {
+      alert('Postagem excluida com sucesso!')
+      this.router.navigate(['/inicio'])
+    })
+    this.getAllPostagens()
+    this.getAllTemas()
+
   }
 
 }
